@@ -1,6 +1,9 @@
 :root {
   /* font */
-  --font-sans: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+  --font-zen-maru: 'Zen Maru Gothic', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+  --font-zen-kaku: 'Zen Kaku Gothic Antique', sans-serif;
+  --font-noto-jp: 'Noto Sans JP', sans-serif;
+  --font-hiragino: 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
   --base-text-unit: 16;
   --rem-ratio: calc(1rem / var(--base-text-unit));
   --font-normal: 400;
@@ -10,38 +13,67 @@
   --leading-tight: 1.3;
   --leading-snug: 1.5;
   --leading-normal: 1.7;
-  --leading-relaxed: 1.8;
+  --leading-relaxed: 1.9;
   --leading-loose: 2;
+  --tracking-tighter: -0.02em;
   --tracking-tight: 0.02em;
   --tracking-normal: 0.05em;
   --tracking-medium: 0.07em;
+  --tracking-wide: 0.09em;
   --tracking-relaxed: 0.12em;
 
   /* size */
-  --layout-width-min: 375;
-  --layout-width-max: 1440;
+  --layout-width-min: 768;
+  --layout-width-max: 1800;
+  --layout-inner-width-min: 704;
+  --layout-inner-width-max: 1240;
   --fluid-ratio-min: calc(1 / var(--layout-width-min) * 100dvi);
   --fluid-ratio-max: calc(1 / var(--layout-width-max) * 100dvi);
+  --percent-ratio-min: calc(1 / var(--layout-width-min) * 100%);
+  --percent-ratio-max: calc(1 / var(--layout-width-max) * 100%);
   --aspect-video: 16/9;
   --aspect-thumbnail: 1.91/1;
+  --aspect-frame: 1800/104;
+  --aspect-frame-sp: 768/46;
+  --aspect-arrow: 20/12;
+  --aspect-accordion-arrow: 23/15;
+  --aspect-link-arrow: 11/7;
+  --aspect-link-arrow-sp: 22/15;
   --rounded-xs: 2px;
   --rounded-s: 4px;
   --rounded-m: 8px;
-  --rounded-sl: 10px;
+  --rounded-sl: 16px;
   --rounded-l: 30px;
+  --rounded-xl: 63px;
+  --rounded-xxl: 100px;
+  --rounded-full: 100%;
 
   /* color */
   --color-grayscale-0: #fff;
+  --color-grayscale-100: #2f2f2f;
   --color-grayscale-1000: #000;
+  --color-yellowscale-0: #fffff2;
+  --color-yellowscale-100: #fffedb;
+  --color-yellowscale-200: #fdffc8;
+  --color-yellowscale-300: #fae21b;
+  --color-yellowscale-400: #fffb32;
+  --color-bluescale-0: #edf9fc;
+  --color-bluescale-100: #178ceb;
+  --color-bluescale-200: #0035a0;
+  --color-bluescale-300: #004098;
+  --color-greenscale-0: #258874;
+  --color-redscale-0: #f61f1f;
   --background-base: var(--color-grayscale-0);
+  --gradient-diagonal-blue-green: linear-gradient(135deg, rgb(0 64 152 / 100%), rgb(55 167 87 / 100%));
   --font-base: var(--color-grayscale-100);
-  --underline-base: color-mix(in srgb, currentcolor, transparent 40%);
+  --underline-base: color-mix(in srgb, currentcolor, transparent 70%);
 
   /* z-index */
   --back-z-index: -1;
   --default-z-index: 1;
   --front-z-index: 2;
   --menu-z-index: 3;
+  --modal-z-index: 4;
 
   /* motion time */
   --speed-quick: 0.3s;
