@@ -84,12 +84,12 @@
 }
 
 .l-mv__button-link {
-  --asepect-mv-button: 560/128;
+  --aspect-mv-button: 560/128;
 
   position: relative;
   display: flex;
   align-items: center;
-  aspect-ratio: var(--asepect-mv-button);
+  aspect-ratio: var(--aspect-mv-button);
   background-color: var(--color-bluescale-200);
   border-radius: var(--rounded-m);
   box-shadow: 4px 4px 0 rgb(255 251 50 / 100%);
@@ -502,7 +502,7 @@
   inset: 0;
   inline-size: 100%;
   block-size: 100%;
-  background-color: var(--background-card);
+  background: var(--background-card);
   border-radius: var(--rounded-sl);
 }
 
@@ -873,7 +873,7 @@
   opacity: 0;
   visibility: hidden;
   transition:
-    opatcity 0.3s ease,
+    opacity 0.3s ease,
     visibility 0.3s ease;
 }
 
@@ -1472,5 +1472,13 @@
 
   .l-insurance__note-link:hover {
     border-color: transparent;
+  }
+
+  .l-modal__close:hover::before {
+    scale: 1.15;
+  }
+
+  .l-modal__link:hover .l-modal__image {
+    scale: 1.03;
   }
 }
