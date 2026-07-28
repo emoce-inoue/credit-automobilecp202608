@@ -2,7 +2,7 @@
   /* font */
   --font-zen-maru: 'Zen Maru Gothic', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
   --font-zen-kaku: 'Zen Kaku Gothic Antique', sans-serif;
-  --font-noto: "Noto Sans", 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+  --font-noto: 'Noto Sans', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
   --base-text-unit: 16;
   --rem-ratio: calc(1rem / var(--base-text-unit));
   --font-normal: 400;
