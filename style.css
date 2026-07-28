@@ -1062,6 +1062,7 @@ summary::-webkit-details-marker {
 
 .l-footer__links {
   display: grid;
+  align-content: start;
   row-gap: 20px;
 }
 
