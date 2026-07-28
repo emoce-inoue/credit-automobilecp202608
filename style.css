@@ -2,8 +2,7 @@
   /* font */
   --font-zen-maru: 'Zen Maru Gothic', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
   --font-zen-kaku: 'Zen Kaku Gothic Antique', sans-serif;
-  --font-noto-jp: 'Noto Sans JP', sans-serif;
-  --font-hiragino: 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+  --font-noto: 'Noto Sans', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
   --base-text-unit: 16;
   --rem-ratio: calc(1rem / var(--base-text-unit));
   --font-normal: 400;
@@ -33,8 +32,8 @@
   --percent-ratio-max: calc(1 / var(--layout-width-max) * 100%);
   --aspect-video: 16/9;
   --aspect-thumbnail: 1.91/1;
-  --aspect-frame: 1800/104;
-  --aspect-frame-sp: 768/46;
+  --aspect-frame: 1800/105;
+  --aspect-frame-sp: 770/46;
   --aspect-arrow: 20/12;
   --aspect-accordion-arrow: 23/15;
   --aspect-link-arrow: 11/7;
@@ -262,7 +261,7 @@ summary::-webkit-details-marker {
   content: '';
   z-index: var(--front-z-index);
   position: absolute;
-  inset-block-end: 0;
+  inset-block-end: -0.15%;
   inset-inline-start: 0;
   display: block;
   inline-size: 100%;
@@ -433,7 +432,7 @@ summary::-webkit-details-marker {
   content: '';
   z-index: var(--front-z-index);
   position: absolute;
-  inset-block-end: 0;
+  inset-block-end: -0.1%;
   inset-inline-start: 0;
   display: block;
   inline-size: 100%;
@@ -898,7 +897,8 @@ summary::-webkit-details-marker {
   margin-inline: auto;
   background-color: var(--color-bluescale-300);
   border-radius: var(--rounded-s);
-  font-family: var(--font-noto-jp);
+  font-weight: var(--font-bold);
+  font-family: var(--font-noto);
   font-size: calc(32 * var(--fluid-ratio-min));
   color: var(--background-base);
 }
@@ -1042,7 +1042,7 @@ summary::-webkit-details-marker {
 }
 
 .l-footer {
-  font-family: var(--font-hiragino);
+  font-family: var(--font-noto);
 }
 
 .l-footer__container {
@@ -1052,6 +1052,7 @@ summary::-webkit-details-marker {
 
 .l-footer__link-item {
   text-align: center;
+  line-height: var(--leading-snug);
 }
 
 .l-footer__link {
